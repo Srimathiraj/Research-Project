@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Supervisor Recognition List</h2>
+
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>University</th>
+        <th>Recognition No</th>
+        <th>Date</th>
+        <th>Specialization</th>
+        <th>Action</th>
+    </tr>
+
+    {% for row in data %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td>{{ row[4] }}</td>
+        <td>{{ row[5] }}</td>
+        <td>{{ row[6] }}</td>
+        <td>
+            <a href="/delete/{{ row[0] }}">❌ Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

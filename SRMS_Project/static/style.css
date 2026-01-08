@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+/* navbar */
+.navbar {
+    background: black;
+    padding: 10px;
+}
+.navbar a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* login */
+.login-box {
+    width: 300px;
+    margin: 150px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px #bbb;
+}
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+}
